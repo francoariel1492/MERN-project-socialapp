@@ -1,0 +1,38 @@
+USER 
+
+_id             String
+firstName       String
+lastName        String
+friend          Array<Object>
+email           String
+password        String
+picturePath     String ref
+location        String
+occupation      String
+viewedProfile   Number
+impressions     Number
+
+Post
+
+_id             String
+userId          String ref
+firstName       String
+lastName        String
+location        String
+description     String
+usePicturePath  String ref
+picturePath     String ref
+likes           Object<String ref>
+comment         Array<String>
+
+Friend(Sub Doc)
+
+_id             String
+firstName       String
+lastName        String
+picturePath     String ref
+occupation      String
+location        String
+
+images
+path
